@@ -1,4 +1,4 @@
-<p>Published by: {{ quote.name}}</p>
+<p>Published by: {{ quote.name}}  <br>Posted: {{quote.datePosted|dateCount}} days ago.</p>
 <button class="btn btn-success btnspace" (click)='like()' type="button" name="button" id="like">
     <span class="fa fa-thumbs-up"></span> Likes: {{likes}} </button>
 
