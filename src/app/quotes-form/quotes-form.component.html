@@ -22,7 +22,7 @@
                 <div class="md-form">
                     <label for="qoute">Qoute</label>
                     <textarea type="text" id="description"  [(ngModel)]="newQuote.description" name="quote" rows="2" class="form-control md-textarea" placeholder="Qoute" #description='ngModel' required></textarea>
-                    <div [hidden]="quote.valid || name.pristine" class="alert alert-danger">
+                    <div [hidden]="description.valid || name.pristine" class="alert alert-danger">
                         <p>You need to add a qoute </p>
                       </div>
                 </div>
