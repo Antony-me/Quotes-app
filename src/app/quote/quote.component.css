@@ -1,0 +1,42 @@
+
+.card-body{
+    display: flex;
+    flex-flow: wrap;
+    width: 100%;
+    margin: 15px;
+    
+   
+    
+}
+
+.card-columns{
+    border: 5px solid yellow;
+  
+}
+
+.card{
+    flex: 2;
+    /* background-color: orange; */
+    width: 100%;
+    background-color:aquamarine;
+}
+#qoutes{
+    width: 25%;
+    margin: 2%;
+    padding: 1%;
+    color: white;
+    font-weight: bolder;
+    background-image: url("src/assets/mind.jpeg");
+    
+}
+.jumbotron{
+    height: 200%;
+    display: flex;
+}
+
+
+
+
+
+
+

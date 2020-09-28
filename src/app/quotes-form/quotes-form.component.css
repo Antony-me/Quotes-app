@@ -1,0 +1,17 @@
+.container {
+    /* border: 2px solid green; */
+    padding-top: 7%;
+    padding-bottom: 7%;
+    margin: 7%, 0, 3%, 0;
+    
+
+}
+.container .row{
+    width: 450%;
+   
+}
+
+.jumbotron{
+    background-color:yellow;
+}
+
