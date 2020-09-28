@@ -1,4 +1,13 @@
-# FinalQts
+# Quotes
+
+
+## Author
+
+[Antony Simiyu  Munyasia](https://github.com/Antony-me)
+
+## Description
+This is a web application Reading and adding Qoutes
+<img src="src/assets/qoutes.png">
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.1.
 
