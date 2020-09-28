@@ -1,7 +1,12 @@
+*{
+    font-family: 'Merienda', cursive;
+}
+
 h1{
     color: greenyellow;
     background-color:rgba(0, 0, 0, 0.534);
     font-weight: 800;
+    
 }
 
 .card{
