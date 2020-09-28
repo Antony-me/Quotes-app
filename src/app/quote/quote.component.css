@@ -20,14 +20,11 @@
     width: 100%;
     background-color:aquamarine;
 }
-#qoutes{
-    width: 25%;
-    margin: 2%;
-    padding: 1%;
-    color: white;
-    font-weight: bolder;
-    background-image: url("src/assets/mind.jpeg");
-    
+.col-md-6 ul{
+    border: 2px solid black;
+    width: 60%;
+    list-style: none;
+    padding: 10px;
 }
 .jumbotron{
     height: 200%;

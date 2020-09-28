@@ -7,14 +7,14 @@
 
 
             <div class="col-md-6">
-                <h1>Trending Quotes</h1>
-                <p>These are the most trending quotes be inspired</p>
+                <h1>Quotes</h1>
                 <br>
                 <ul>
             
                     <div *ngFor='let quote of quotes;let i = index' id="quotes">
-                        <li id="{{i}}">{{quote.description}}</li>
-                        <button class="btn btn-success" (click)='toggleDetails(i)'>Quote Details</button>
+                        <button class="btn btn-success" (click)='toggleDetails(i)'>More Details</button>
+                        <li id="{{i}}">{{quote.title}} <br> {{quote.description}}</li>
+                        <!-- <button class="btn btn-success" (click)='toggleDetails(i)'>Quote Details</button> -->
             
                         <app-quote-detailes *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuote($event,i)'>
                         </app-quote-detailes>
