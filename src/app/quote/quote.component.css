@@ -1,34 +1,30 @@
-
-.card-body{
-    display: flex;
-    flex-flow: wrap;
-    width: 100%;
-    margin: 15px;
-    
-   
-    
-}
-
-.card-columns{
-    border: 5px solid yellow;
-  
-}
-
 .card{
-    flex: 2;
-    /* background-color: orange; */
     width: 100%;
     background-color:aquamarine;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
-.col-md-6 ul{
+.col-md-6 ul li{
     border: 2px solid black;
-    width: 60%;
+    margin: 5%;
     list-style: none;
+    display: inline;
     padding: 10px;
+    
 }
+
 .jumbotron{
     height: 200%;
     display: flex;
+}
+#detailes-button{
+    margin-left: 60%;
+    font-size: small;
+}
+#quotes{
+    display: flex;
+    
 }
 
 

@@ -4,20 +4,16 @@
     <app-quotes-form (addQuote)="addNewQuote($event)"></app-quotes-form>
     <div class="card">
         <div class="card-body">
-
-
             <div class="col-md-6">
-                <h1>Quotes</h1>
-                <br>
+                <h1>Quotes</h1><br>
                 <ul>
-            
+                    
                     <div *ngFor='let quote of quotes;let i = index' id="quotes">
-                        <button class="btn btn-success" (click)='toggleDetails(i)'>More Details</button>
-                        <li id="{{i}}">{{quote.title}} <br> {{quote.description}}</li>
-                        <!-- <button class="btn btn-success" (click)='toggleDetails(i)'>Quote Details</button> -->
-            
+                        <li id="{{i}}">{{quote.title}} <br>
+                            <button class="btn btn-success" (click)='toggleDetails(i)' id="detailes-button">Details</button> <br>
+                             {{quote.description}}
                         <app-quote-detailes *ngIf="quote.showDescription" [quote]='quote' (isComplete)='completeQuote($event,i)'>
-                        </app-quote-detailes>
+                        </app-quote-detailes></li>
                     </div>
                 </ul>
                 <br>
