@@ -9,6 +9,11 @@ h1{
     
 }
 
+li{
+    color: rgb(255, 0, 0);
+    font-weight: 900;
+}
+
 .card{
     width: 100%;
     background-color:aquamarine;
