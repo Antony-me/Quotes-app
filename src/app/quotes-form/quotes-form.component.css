@@ -1,17 +1,17 @@
 .container {
-    /* border: 2px solid green; */
-    padding-top: 7%;
+    padding-top: 0%;
     padding-bottom: 7%;
     margin: 7%, 0, 3%, 0;
     
-
 }
 .container .row{
     width: 450%;
-   
+    background-image: url("src/assets/mind.jpeg");
+    color: white;
 }
 
-.jumbotron{
-    background-color:yellow;
+.row{
+    padding-top: 35%;
 }
+
 
