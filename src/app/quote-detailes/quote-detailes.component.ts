@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
+import { Quote } from '../quote';
 
 @Component({
   selector: 'app-quote-detailes',
@@ -6,6 +7,36 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./quote-detailes.component.css']
 })
 export class QuoteDetailesComponent implements OnInit {
+
+  likes = 0
+  dislikes = 0
+
+  @Input() quote: Quote;
+  @Output() isComplete = new EventEmitter<boolean>();
+  @Output() isPlus = new EventEmitter<boolean>();
+  @Output() isMinus = new EventEmitter<boolean>();
+
+
+  quoteComplete(complete: boolean) {
+    this.isComplete.emit(complete);
+  }
+
+  //likes and dislikes
+  likesAdd(plus: boolean) {
+    this.isPlus.emit(plus);
+  }
+  likesMinus(minus: boolean) {
+    this.isMinus.emit(minus);
+  }
+
+  like() {
+    this.likes = this.likes += 1;
+  }
+  hate() {
+    this.dislikes = this.dislikes += 1;
+  }
+
+
 
   constructor() { }
 
