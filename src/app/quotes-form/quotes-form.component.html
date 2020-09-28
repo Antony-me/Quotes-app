@@ -1,7 +1,7 @@
 <div class="container">
     <div class="row">
         <div class="col-sm-3">
-            <form>
+            <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
                 <h2>Add your qoute</h2>
                 <div class="form-group">
                   <label for="name">Your Name</label>
